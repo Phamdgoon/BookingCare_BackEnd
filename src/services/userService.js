@@ -25,6 +25,7 @@ let handleUserLogin = (email, password) => {
                 //tìm một user
                 let user = await db.User.findOne({
                     attributes: [
+                        "id",
                         "email",
                         "roleId",
                         "password",
